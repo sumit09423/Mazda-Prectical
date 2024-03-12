@@ -419,8 +419,9 @@ footer .col > ul > li > a {
   .aside {
     width: 100%;
   }
-  .bside{
+  .bside {
     margin-bottom: 20px;
+    width: 100%;
   }
   .book-area {
     padding: 23px 0px;
@@ -508,15 +509,15 @@ footer .col > ul > li > a {
   .navbar-nav > div {
     display: none;
   }
-  .nav-item{
+  .nav-item {
     padding: 0 !important;
     margin: 0 !important;
   }
-  .nav-item>span{
+  .nav-item > span {
     padding: 10px 10px !important;
     margin: 0 !important;
   }
-  .img-item{
+  .img-item {
     width: 91px;
   }
 }
@@ -650,7 +651,7 @@ footer .col > ul > li > a {
   .sideb-li {
     font-size: 13px;
   }
- 
+
   .icon-aminites {
     font-size: 15px;
     padding-left: 7px;
