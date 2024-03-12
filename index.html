@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travelodeal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="Style.css" />
+    <!-- Font Awosomw -->
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="container d-flex justify-content-end top-header py-2">
+        <img
+          src="./Assets/Images/logo.png"
+          class="top-header-img"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="./Assets/Images/Screenshot 2024-03-11 181717.png"
+          alt=""
+          srcset=""
+          class="top-header-img"
+        />
+        <div class="vr border-4 opacity-75"></div>
+        <div class="d-flex flex-wrap align-items-center">
+          <span>
+            <img src="./Assets/Images/call.svg" alt="" srcset="" width="30" class="img-top-nav" />
+            <a
+              href="tel:+02045059777"
+              class="top-nav-num text-decoration-none text-danger text-wrap"
+              style="font-size: 20px"
+              >020 4505 9777</a
+            >
+          </span>
+        </div>
+      </div>
+      <!-- Main Navigation -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="./Assets/Images/tod-logo.svg" alt="" srcset=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hotels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <div class="vr border-1 opacity-20 mx-2"></div>
+              <li class="nav-item mx-2 d-flex align-items-center">
+                <span>
+                  <a
+                    href="#"
+                    class="text-decoration-none text-secondary text-wrap"
+                    >Shortlist</a
+                  >
+                  <img
+                    src="./Assets/Images/love.svg"
+                    alt=""
+                    srcset=""
+                    width="20"
+                  />
+                </span>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <span>
+                  <a
+                    href="#"
+                    class="text-decoration-none text-secondary text-wrap"
+                    >Sign In</a
+                  >
+                  <img
+                    src="./Assets/Images/user.svg"
+                    alt=""
+                    srcset=""
+                    width="20"
+                  />
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content -->
+
+    <main>
+      <section class="hero-search">
+        <div class="container">
+          <div class="input-row">
+            <div class="input-container">
+              <label for="input-field1" class="input-label">FROM</label>
+              <div class="input-field-icon">
+                <input
+                  placeholder="Any Location"
+                  class="input-field"
+                  type="text"
+                  id="input-field1"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="location-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    stroke="#fff"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="input-field2" class="input-label">TO</label>
+              <div class="input-field-icon">
+                <input
+                  placeholder="To"
+                  class="input-field"
+                  type="text"
+                  id="input-field2"
+                />
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="input-field3" class="input-label">Departure</label>
+              <div class="input-field-icon">
+                <input
+                  placeholder="Departure"
+                  class="input-field"
+                  type="text"
+                  id="input-field3"
+                />
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="input-field4" class="input-label"
+                >Rooms & Guests</label
+              >
+              <div class="input-field-icon">
+                <input
+                  placeholder="1 Room 2 Adults"
+                  class="input-field"
+                  type="text"
+                  id="input-field4"
+                />
+              </div>
+            </div>
+            <div class="input-container d-flex align-items-center">
+              <button type="submit" class="search-btn">
+                <img
+                  src="./Assets/Images/rightarrow.svg"
+                  alt=""
+                  srcset=""
+                  width="30"
+                />
+              </button>
+              <span style="margin-left: 20px">Search</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cuuret Tab Locate -->
+      <section class="current-tab mt-3">
+        <div class="container d-flex flex-wrap">
+          <span>Home</span>
+          <div class="vr"></div>
+          <span>Deals</span>
+          <div class="vr" style="color: purple"></div>
+          <span style="color: purple; font-weight: 600">Jersey</span>
+        </div>
+      </section>
+      <!-- Main Content -->
+      <!-- Hotel Details Container  -->
+      <div class="container my-4">
+        <div class="d-flex flex-wrap">
+          <div class="d-flex flex-wrap flex-column align-items-center me-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="30"
+              height="30"
+            >
+              <path
+                fill="#FFD700"
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+              <path d="M0 0h24v24H0z" fill="none" />
+            </svg>
+
+            <span class="rating">5.0</span>
+          </div>
+          <div class="vr"></div>
+          <div class="mx-3 d-flex flex-wrap flex-column justify-content-center">
+            <h3 class="title-h3">
+              Jersey: 3-nt Deluxe Break w/Flights & Breakfast
+            </h3>
+            <p class="m-0">St Aubin, Jersey</p>
+          </div>
+        </div>
+      </div>
+      <!-- main content -->
+      <section class="mt-4">
+        <div class="container d-flex gap-3">
+          <div class="hotel-details">
+            <!-- Hotel Image Slider container  -->
+            <div class="aside">
+              <!-- Hotel Image Slider container  -->
+              <div class="imageslider">
+                <div class="slider-wrapper">
+                  <div>
+                    <!-- card left -->
+                    <div class="product-imgs">
+                      <div class="img-display">
+                        <div class="img-showcase">
+                          <img
+                            src="./Assets/Images/hotel1.jpg"
+                            alt="shoe image"
+                            class="img-slider"
+                          />
+                          <img
+                            src="./Assets/Images/hotel2.jpg"
+                            alt="shoe image"
+                            class="img-slider"
+                          />
+                          <img
+                            src="./Assets/Images/hotel3.jpg"
+                            alt="shoe image"
+                            class="img-slider"
+                          />
+                          <img
+                            src="./Assets/Images/hotel4.jpg"
+                            alt="shoe image"
+                            class="img-slider"
+                          />
+                          <img
+                            src="./Assets/Images/hotel5.jpg"
+                            alt="shoe image"
+                            class="img-slider"
+                          />
+                          <img
+                            src="./Assets/Images/hotel6.jpg"
+                            alt="shoe image"
+                            class="img-slider"
+                          />
+                        </div>
+                      </div>
+                      <div class="img-select">
+                        <div class="img-item">
+                          <a href="#" data-id="1">
+                            <img
+                              src="./Assets/Images/hotel1.jpg"
+                              alt="shoe image"
+                              class="img-slider"
+                            />
+                          </a>
+                        </div>
+                        <div class="img-item">
+                          <a href="#" data-id="2">
+                            <img
+                              src="./Assets/Images/hotel2.jpg"
+                              alt="shoe image"
+                              class="img-slider"
+                            />
+                          </a>
+                        </div>
+                        <div class="img-item">
+                          <a href="#" data-id="3">
+                            <img
+                              src="./Assets/Images/hotel3.jpg"
+                              alt="shoe image"
+                              class="img-slider"
+                            />
+                          </a>
+                        </div>
+                        <div class="img-item">
+                          <a href="#" data-id="4">
+                            <img
+                              src="./Assets/Images/hotel4.jpg"
+                              alt="shoe image"
+                              class="img-slider"
+                            />
+                          </a>
+                        </div>
+                        <div class="img-item">
+                          <a href="#" data-id="5">
+                            <img
+                              src="./Assets/Images/hotel5.jpg"
+                              alt="shoe image"
+                              class="img-slider"
+                            />
+                          </a>
+                        </div>
+                        <div class="img-item">
+                          <a href="#" data-id="6">
+                            <img
+                              src="./Assets/Images/hotel6.jpg"
+                              alt="shoe image"
+                              class="img-slider"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card right -->
+                  </div>
+                </div>
+              </div>
+              <!-- Hotel Image Slider container END  -->
+              <!-- ------------------------------------------ -->
+              <!-- Hotel Information Container  -->
+              <div class="container p-0 mt-4">
+                <ul class="tabs m-0"> 
+                  <li class="tab active"  >ACCOMMODATION</li>
+                  <li class="tab" >ROOM</li>
+                  <li class="tab" >LOCATION</li>
+                </ul>
+                <hr class="m-0" />
+
+                <div class="content active">
+                  <div class="aminites">
+                    <h3 class="title-h3 fw-bold">Popular Aminites</h3>
+                    <div class="row d-flex flex-wrap my-3">
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          height="40"
+                          viewBox="0 0 24 24"
+                          width="40"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"
+                          />
+                        </svg>
+                        <span class="icon-aminites">Bath</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <path
+                            d="M288 384c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C320 398.3 305.7 384 288 384zM416 256c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C448 270.3 433.7 256 416 256zM480 192c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C512 206.3 497.7 192 480 192zM288 320c0-17.67-14.33-32-32-32s-32 14.33-32 32c0 17.67 14.33 32 32 32S288 337.7 288 320zM320 224c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C352 238.3 337.7 224 320 224zM384 224c17.67 0 32-14.33 32-32c0-17.67-14.33-32-32-32s-32 14.33-32 32C352 209.7 366.3 224 384 224zM352 320c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C384 334.3 369.7 320 352 320zM347.3 91.31l-11.31-11.31c-6.248-6.248-16.38-6.248-22.63 0l-6.631 6.631c-35.15-26.29-81.81-29.16-119.6-8.779L170.5 61.25C132.2 22.95 63.65 18.33 21.98 71.16C7.027 90.11 0 114.3 0 138.4V464C0 472.8 7.164 480 16 480h32C56.84 480 64 472.8 64 464V131.9c0-19.78 16.09-35.87 35.88-35.87c9.438 0 18.69 3.828 25.38 10.5l16.61 16.61C121.5 160.9 124.3 207.6 150.6 242.7L144 249.4c-6.248 6.248-6.248 16.38 0 22.63l11.31 11.31c6.248 6.25 16.38 6.25 22.63 0l169.4-169.4C353.6 107.7 353.6 97.56 347.3 91.31z"
+                          />
+                        </svg>
+                        <span class="icon-aminites">Shower</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M21.15,4,8.89,2.12a6.07,6.07,0,0,0-2.68.15,6.17,6.17,0,0,0-3,2.14A6,6,0,0,0,6,13.65V21a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V18h1V16H12V13.4L21.15,12A1,1,0,0,0,22,11V5A1,1,0,0,0,21.15,4ZM4,8a4,4,0,0,1,.79-2.39,4.14,4.14,0,0,1,2-1.44,3.47,3.47,0,0,1,1-.14H8v7.9a4.38,4.38,0,0,1-.88-.05,1.68,1.68,0,0,1-.31-.07A4,4,0,0,1,4,8Zm6,12H8V14a6.78,6.78,0,0,0,.89-.08L10,13.71Zm10-9.86-9.15,1.41h0l-.85.13V4.32L20,5.86Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Hair Dryer</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M20.24,6,11,1.38V14c-3.62.21-7,1.56-7,4,0,2.63,4,4,8,4s8-1.37,8-4c0-2.41-3.38-3.76-7-4V9.62ZM18,18c0,.71-2.28,2-6,2s-6-1.29-6-2,1.88-1.75,5-2v2h2V16C16.12,16.25,18,17.36,18,18ZM13,4.62,15.76,6,13,7.38Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Golf</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M20.24,6,11,1.38V14c-3.62.21-7,1.56-7,4,0,2.63,4,4,8,4s8-1.37,8-4c0-2.41-3.38-3.76-7-4V9.62ZM18,18c0,.71-2.28,2-6,2s-6-1.29-6-2,1.88-1.75,5-2v2h2V16C16.12,16.25,18,17.36,18,18ZM13,4.62,15.76,6,13,7.38Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Radio</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                        <svg
+                          id="Layer_1"
+                          style="enable-background: new 0 0 512 512"
+                          version="1.1"
+                          viewBox="0 0 512 512"
+                          xml:space="preserve"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="40"
+                        >
+                          <g>
+                            <path
+                              d="M256.1,96L256.1,96c-79.9,0-155.7,29.9-213.9,84.1L32,189.6l9.9,9.8l32.3,32l9.3,9.2l9.6-8.8   c44.5-40.9,102.3-63.5,162.8-63.5c60.5,0,118.4,22.6,162.8,63.5l9.6,8.8l9.3-9.2l32.3-32l9.9-9.8l-10.2-9.5   C411.6,125.9,335.7,96,256.1,96z"
+                            />
+                            <path
+                              d="M397.4,256.4c-38.8-35.1-88.9-54.4-141.1-54.4h-0.1h-0.3h-8.5l-0.1,0.2c-49.2,2-96,21.1-132.6,54.2l-10.5,9.5l10.1,10   l32.7,32.4l9.1,9l9.6-8.4c25.3-22.2,57.4-34.5,90.3-34.5c33.1,0,65.2,12.3,90.5,34.5l9.6,8.4l9.1-9l32.7-32.4l10.1-10L397.4,256.4z   "
+                            />
+                            <path
+                              d="M256.2,416l9.6-9.5l52.8-52.2l10.6-10.5l-11.6-9.5c-15.4-11.4-32.4-20-61.5-20c-29,0-44.9,9.4-61.5,20l-11.5,9.5l10.6,10.5   l52.8,52.2L256.2,416z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Internet</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Carpeted</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Pool</span>
+                      </div>
+                    </div>
+                    <!-- Point Wise Content -->
+                    <div class="container mt-5 p-0">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <ul>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Minus optio ea et laboriosam iusto quaerat!
+                            </li>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Minus optio ea et laboriosam iusto quaerat!
+                            </li>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Minus optio ea et laboriosam iusto quaerat!
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-6">
+                          <ul>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Hic consequatur a alias dolore adipisci quo!
+                            </li>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Hic consequatur a alias dolore adipisci quo!
+                            </li>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Hic consequatur a alias dolore adipisci quo!
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <!-- Facility -->
+                    <h3 class="title-h3 fw-bold">Facility</h3>
+                    <div class="row d-flex flex-wrap my-3">
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          height="40"
+                          viewBox="0 0 24 24"
+                          width="40"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M21 10H7V7c0-1.103.897-2 2-2s2 .897 2 2h2c0-2.206-1.794-4-4-4S5 4.794 5 7v3H3a1 1 0 0 0-1 1v2c0 2.606 1.674 4.823 4 5.65V22h2v-3h8v3h2v-3.35c2.326-.827 4-3.044 4-5.65v-2a1 1 0 0 0-1-1zm-1 3c0 2.206-1.794 4-4 4H8c-2.206 0-4-1.794-4-4v-1h16v1z"
+                          />
+                        </svg>
+                        <span class="icon-aminites">Bath</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 512 512"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <path
+                            d="M288 384c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C320 398.3 305.7 384 288 384zM416 256c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C448 270.3 433.7 256 416 256zM480 192c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C512 206.3 497.7 192 480 192zM288 320c0-17.67-14.33-32-32-32s-32 14.33-32 32c0 17.67 14.33 32 32 32S288 337.7 288 320zM320 224c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C352 238.3 337.7 224 320 224zM384 224c17.67 0 32-14.33 32-32c0-17.67-14.33-32-32-32s-32 14.33-32 32C352 209.7 366.3 224 384 224zM352 320c-17.67 0-32 14.33-32 32c0 17.67 14.33 32 32 32s32-14.33 32-32C384 334.3 369.7 320 352 320zM347.3 91.31l-11.31-11.31c-6.248-6.248-16.38-6.248-22.63 0l-6.631 6.631c-35.15-26.29-81.81-29.16-119.6-8.779L170.5 61.25C132.2 22.95 63.65 18.33 21.98 71.16C7.027 90.11 0 114.3 0 138.4V464C0 472.8 7.164 480 16 480h32C56.84 480 64 472.8 64 464V131.9c0-19.78 16.09-35.87 35.88-35.87c9.438 0 18.69 3.828 25.38 10.5l16.61 16.61C121.5 160.9 124.3 207.6 150.6 242.7L144 249.4c-6.248 6.248-6.248 16.38 0 22.63l11.31 11.31c6.248 6.25 16.38 6.25 22.63 0l169.4-169.4C353.6 107.7 353.6 97.56 347.3 91.31z"
+                          />
+                        </svg>
+                        <span class="icon-aminites">Shower</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M21.15,4,8.89,2.12a6.07,6.07,0,0,0-2.68.15,6.17,6.17,0,0,0-3,2.14A6,6,0,0,0,6,13.65V21a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1V18h1V16H12V13.4L21.15,12A1,1,0,0,0,22,11V5A1,1,0,0,0,21.15,4ZM4,8a4,4,0,0,1,.79-2.39,4.14,4.14,0,0,1,2-1.44,3.47,3.47,0,0,1,1-.14H8v7.9a4.38,4.38,0,0,1-.88-.05,1.68,1.68,0,0,1-.31-.07A4,4,0,0,1,4,8Zm6,12H8V14a6.78,6.78,0,0,0,.89-.08L10,13.71Zm10-9.86-9.15,1.41h0l-.85.13V4.32L20,5.86Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Hair Dryer</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M20.24,6,11,1.38V14c-3.62.21-7,1.56-7,4,0,2.63,4,4,8,4s8-1.37,8-4c0-2.41-3.38-3.76-7-4V9.62ZM18,18c0,.71-2.28,2-6,2s-6-1.29-6-2,1.88-1.75,5-2v2h2V16C16.12,16.25,18,17.36,18,18ZM13,4.62,15.76,6,13,7.38Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Golf</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M20.24,6,11,1.38V14c-3.62.21-7,1.56-7,4,0,2.63,4,4,8,4s8-1.37,8-4c0-2.41-3.38-3.76-7-4V9.62ZM18,18c0,.71-2.28,2-6,2s-6-1.29-6-2,1.88-1.75,5-2v2h2V16C16.12,16.25,18,17.36,18,18ZM13,4.62,15.76,6,13,7.38Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Radio</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                        <svg
+                          id="Layer_1"
+                          style="enable-background: new 0 0 512 512"
+                          version="1.1"
+                          viewBox="0 0 512 512"
+                          xml:space="preserve"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="40"
+                        >
+                          <g>
+                            <path
+                              d="M256.1,96L256.1,96c-79.9,0-155.7,29.9-213.9,84.1L32,189.6l9.9,9.8l32.3,32l9.3,9.2l9.6-8.8   c44.5-40.9,102.3-63.5,162.8-63.5c60.5,0,118.4,22.6,162.8,63.5l9.6,8.8l9.3-9.2l32.3-32l9.9-9.8l-10.2-9.5   C411.6,125.9,335.7,96,256.1,96z"
+                            />
+                            <path
+                              d="M397.4,256.4c-38.8-35.1-88.9-54.4-141.1-54.4h-0.1h-0.3h-8.5l-0.1,0.2c-49.2,2-96,21.1-132.6,54.2l-10.5,9.5l10.1,10   l32.7,32.4l9.1,9l9.6-8.4c25.3-22.2,57.4-34.5,90.3-34.5c33.1,0,65.2,12.3,90.5,34.5l9.6,8.4l9.1-9l32.7-32.4l10.1-10L397.4,256.4z   "
+                            />
+                            <path
+                              d="M256.2,416l9.6-9.5l52.8-52.2l10.6-10.5l-11.6-9.5c-15.4-11.4-32.4-20-61.5-20c-29,0-44.9,9.4-61.5,20l-11.5,9.5l10.6,10.5   l52.8,52.2L256.2,416z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Internet</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Carpeted</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Pool</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M20.24,6,11,1.38V14c-3.62.21-7,1.56-7,4,0,2.63,4,4,8,4s8-1.37,8-4c0-2.41-3.38-3.76-7-4V9.62ZM18,18c0,.71-2.28,2-6,2s-6-1.29-6-2,1.88-1.75,5-2v2h2V16C16.12,16.25,18,17.36,18,18ZM13,4.62,15.76,6,13,7.38Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Radio</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                        <svg
+                          id="Layer_1"
+                          style="enable-background: new 0 0 512 512"
+                          version="1.1"
+                          viewBox="0 0 512 512"
+                          xml:space="preserve"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="40"
+                        >
+                          <g>
+                            <path
+                              d="M256.1,96L256.1,96c-79.9,0-155.7,29.9-213.9,84.1L32,189.6l9.9,9.8l32.3,32l9.3,9.2l9.6-8.8   c44.5-40.9,102.3-63.5,162.8-63.5c60.5,0,118.4,22.6,162.8,63.5l9.6,8.8l9.3-9.2l32.3-32l9.9-9.8l-10.2-9.5   C411.6,125.9,335.7,96,256.1,96z"
+                            />
+                            <path
+                              d="M397.4,256.4c-38.8-35.1-88.9-54.4-141.1-54.4h-0.1h-0.3h-8.5l-0.1,0.2c-49.2,2-96,21.1-132.6,54.2l-10.5,9.5l10.1,10   l32.7,32.4l9.1,9l9.6-8.4c25.3-22.2,57.4-34.5,90.3-34.5c33.1,0,65.2,12.3,90.5,34.5l9.6,8.4l9.1-9l32.7-32.4l10.1-10L397.4,256.4z   "
+                            />
+                            <path
+                              d="M256.2,416l9.6-9.5l52.8-52.2l10.6-10.5l-11.6-9.5c-15.4-11.4-32.4-20-61.5-20c-29,0-44.9,9.4-61.5,20l-11.5,9.5l10.6,10.5   l52.8,52.2L256.2,416z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Internet</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Carpeted</span>
+                      </div>
+                      <div class="col-lg-3 col-md-3 pt-4">
+                        <?xml version="1.0" ?><svg
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="40"
+                        >
+                          <g data-name="Layer 2" id="Layer_2">
+                            <path
+                              d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                            />
+                          </g>
+                        </svg>
+                        <span class="icon-aminites">Pool</span>
+                      </div>
+                    </div>
+                    <div class="container mt-5 p-0">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <ul>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Minus optio ea et laboriosam iusto quaerat!
+                            </li>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Minus optio ea et laboriosam iusto quaerat!
+                            </li>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Minus optio ea et laboriosam iusto quaerat!
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-6">
+                          <ul>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Hic consequatur a alias dolore adipisci quo!
+                            </li>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Hic consequatur a alias dolore adipisci quo!
+                            </li>
+                            <li>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Hic consequatur a alias dolore adipisci quo!
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end -->
+                    <!-- Sport's -->
+                    <div class="area-content d-flex gap-3">
+                      <div class="side-a">
+                        <img
+                          src="./Assets/Images/rightarrow black.svg"
+                          width="35"
+                          alt=""
+                          srcset=""
+                        />
+                      </div>
+                      <div class="side-b">
+                        <h3 class="title-h3 fw-bold">Sport</h3>
+                        <div class="row d-flex flex-wrap my-3">
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M20.24,6,11,1.38V14c-3.62.21-7,1.56-7,4,0,2.63,4,4,8,4s8-1.37,8-4c0-2.41-3.38-3.76-7-4V9.62ZM18,18c0,.71-2.28,2-6,2s-6-1.29-6-2,1.88-1.75,5-2v2h2V16C16.12,16.25,18,17.36,18,18ZM13,4.62,15.76,6,13,7.38Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Radio</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                            <svg
+                              id="Layer_1"
+                              style="enable-background: new 0 0 512 512"
+                              version="1.1"
+                              viewBox="0 0 512 512"
+                              xml:space="preserve"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="40"
+                            >
+                              <g>
+                                <path
+                                  d="M256.1,96L256.1,96c-79.9,0-155.7,29.9-213.9,84.1L32,189.6l9.9,9.8l32.3,32l9.3,9.2l9.6-8.8   c44.5-40.9,102.3-63.5,162.8-63.5c60.5,0,118.4,22.6,162.8,63.5l9.6,8.8l9.3-9.2l32.3-32l9.9-9.8l-10.2-9.5   C411.6,125.9,335.7,96,256.1,96z"
+                                />
+                                <path
+                                  d="M397.4,256.4c-38.8-35.1-88.9-54.4-141.1-54.4h-0.1h-0.3h-8.5l-0.1,0.2c-49.2,2-96,21.1-132.6,54.2l-10.5,9.5l10.1,10   l32.7,32.4l9.1,9l9.6-8.4c25.3-22.2,57.4-34.5,90.3-34.5c33.1,0,65.2,12.3,90.5,34.5l9.6,8.4l9.1-9l32.7-32.4l10.1-10L397.4,256.4z   "
+                                />
+                                <path
+                                  d="M256.2,416l9.6-9.5l52.8-52.2l10.6-10.5l-11.6-9.5c-15.4-11.4-32.4-20-61.5-20c-29,0-44.9,9.4-61.5,20l-11.5,9.5l10.6,10.5   l52.8,52.2L256.2,416z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Internet</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Carpeted</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Pool</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M20.24,6,11,1.38V14c-3.62.21-7,1.56-7,4,0,2.63,4,4,8,4s8-1.37,8-4c0-2.41-3.38-3.76-7-4V9.62ZM18,18c0,.71-2.28,2-6,2s-6-1.29-6-2,1.88-1.75,5-2v2h2V16C16.12,16.25,18,17.36,18,18ZM13,4.62,15.76,6,13,7.38Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Radio</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                            <svg
+                              id="Layer_1"
+                              style="enable-background: new 0 0 512 512"
+                              version="1.1"
+                              viewBox="0 0 512 512"
+                              xml:space="preserve"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="40"
+                            >
+                              <g>
+                                <path
+                                  d="M256.1,96L256.1,96c-79.9,0-155.7,29.9-213.9,84.1L32,189.6l9.9,9.8l32.3,32l9.3,9.2l9.6-8.8   c44.5-40.9,102.3-63.5,162.8-63.5c60.5,0,118.4,22.6,162.8,63.5l9.6,8.8l9.3-9.2l32.3-32l9.9-9.8l-10.2-9.5   C411.6,125.9,335.7,96,256.1,96z"
+                                />
+                                <path
+                                  d="M397.4,256.4c-38.8-35.1-88.9-54.4-141.1-54.4h-0.1h-0.3h-8.5l-0.1,0.2c-49.2,2-96,21.1-132.6,54.2l-10.5,9.5l10.1,10   l32.7,32.4l9.1,9l9.6-8.4c25.3-22.2,57.4-34.5,90.3-34.5c33.1,0,65.2,12.3,90.5,34.5l9.6,8.4l9.1-9l32.7-32.4l10.1-10L397.4,256.4z   "
+                                />
+                                <path
+                                  d="M256.2,416l9.6-9.5l52.8-52.2l10.6-10.5l-11.6-9.5c-15.4-11.4-32.4-20-61.5-20c-29,0-44.9,9.4-61.5,20l-11.5,9.5l10.6,10.5   l52.8,52.2L256.2,416z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Internet</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Carpeted</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Pool</span>
+                          </div>
+                        </div>
+                        <div class="container mt-5 p-0">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <ul>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Minus optio ea et laboriosam
+                                  iusto quaerat!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Minus optio ea et laboriosam
+                                  iusto quaerat!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Minus optio ea et laboriosam
+                                  iusto quaerat!
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-6">
+                              <ul>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Hic consequatur a alias
+                                  dolore adipisci quo!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Hic consequatur a alias
+                                  dolore adipisci quo!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Hic consequatur a alias
+                                  dolore adipisci quo!
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End -->
+                    <!-- Meal -->
+                    <div class="area-content d-flex gap-3">
+                      <div class="side-a">
+                        <img
+                          src="./Assets/Images/rightarrow black.svg"
+                          width="35"
+                          alt=""
+                          srcset=""
+                        />
+                      </div>
+                      <div class="side-b">
+                        <h3 class="title-h3 fw-bold">Meal</h3>
+                        <div class="row d-flex flex-wrap my-3">
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M20.24,6,11,1.38V14c-3.62.21-7,1.56-7,4,0,2.63,4,4,8,4s8-1.37,8-4c0-2.41-3.38-3.76-7-4V9.62ZM18,18c0,.71-2.28,2-6,2s-6-1.29-6-2,1.88-1.75,5-2v2h2V16C16.12,16.25,18,17.36,18,18ZM13,4.62,15.76,6,13,7.38Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Radio</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                            <svg
+                              id="Layer_1"
+                              style="enable-background: new 0 0 512 512"
+                              version="1.1"
+                              viewBox="0 0 512 512"
+                              xml:space="preserve"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="40"
+                            >
+                              <g>
+                                <path
+                                  d="M256.1,96L256.1,96c-79.9,0-155.7,29.9-213.9,84.1L32,189.6l9.9,9.8l32.3,32l9.3,9.2l9.6-8.8   c44.5-40.9,102.3-63.5,162.8-63.5c60.5,0,118.4,22.6,162.8,63.5l9.6,8.8l9.3-9.2l32.3-32l9.9-9.8l-10.2-9.5   C411.6,125.9,335.7,96,256.1,96z"
+                                />
+                                <path
+                                  d="M397.4,256.4c-38.8-35.1-88.9-54.4-141.1-54.4h-0.1h-0.3h-8.5l-0.1,0.2c-49.2,2-96,21.1-132.6,54.2l-10.5,9.5l10.1,10   l32.7,32.4l9.1,9l9.6-8.4c25.3-22.2,57.4-34.5,90.3-34.5c33.1,0,65.2,12.3,90.5,34.5l9.6,8.4l9.1-9l32.7-32.4l10.1-10L397.4,256.4z   "
+                                />
+                                <path
+                                  d="M256.2,416l9.6-9.5l52.8-52.2l10.6-10.5l-11.6-9.5c-15.4-11.4-32.4-20-61.5-20c-29,0-44.9,9.4-61.5,20l-11.5,9.5l10.6,10.5   l52.8,52.2L256.2,416z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Internet</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Carpeted</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Pool</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M20.24,6,11,1.38V14c-3.62.21-7,1.56-7,4,0,2.63,4,4,8,4s8-1.37,8-4c0-2.41-3.38-3.76-7-4V9.62ZM18,18c0,.71-2.28,2-6,2s-6-1.29-6-2,1.88-1.75,5-2v2h2V16C16.12,16.25,18,17.36,18,18ZM13,4.62,15.76,6,13,7.38Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Radio</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                            <svg
+                              id="Layer_1"
+                              style="enable-background: new 0 0 512 512"
+                              version="1.1"
+                              viewBox="0 0 512 512"
+                              xml:space="preserve"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="40"
+                            >
+                              <g>
+                                <path
+                                  d="M256.1,96L256.1,96c-79.9,0-155.7,29.9-213.9,84.1L32,189.6l9.9,9.8l32.3,32l9.3,9.2l9.6-8.8   c44.5-40.9,102.3-63.5,162.8-63.5c60.5,0,118.4,22.6,162.8,63.5l9.6,8.8l9.3-9.2l32.3-32l9.9-9.8l-10.2-9.5   C411.6,125.9,335.7,96,256.1,96z"
+                                />
+                                <path
+                                  d="M397.4,256.4c-38.8-35.1-88.9-54.4-141.1-54.4h-0.1h-0.3h-8.5l-0.1,0.2c-49.2,2-96,21.1-132.6,54.2l-10.5,9.5l10.1,10   l32.7,32.4l9.1,9l9.6-8.4c25.3-22.2,57.4-34.5,90.3-34.5c33.1,0,65.2,12.3,90.5,34.5l9.6,8.4l9.1-9l32.7-32.4l10.1-10L397.4,256.4z   "
+                                />
+                                <path
+                                  d="M256.2,416l9.6-9.5l52.8-52.2l10.6-10.5l-11.6-9.5c-15.4-11.4-32.4-20-61.5-20c-29,0-44.9,9.4-61.5,20l-11.5,9.5l10.6,10.5   l52.8,52.2L256.2,416z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Internet</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Carpeted</span>
+                          </div>
+                          <div class="col-lg-3 col-md-3 pt-4">
+                            <?xml version="1.0" ?><svg
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="40"
+                            >
+                              <g data-name="Layer 2" id="Layer_2">
+                                <path
+                                  d="M18,18V5a3,3,0,0,0-3-3,3,3,0,0,0-3,3V6h2V5a1,1,0,0,1,1-1,1,1,0,0,1,.71.31A1,1,0,0,1,16,5V7H8V5a2.92,2.92,0,0,0-.87-2.11A2.94,2.94,0,0,0,5,2,3,3,0,0,0,2,5V6H4V5A1,1,0,0,1,5,4a1,1,0,0,1,.71.31A1,1,0,0,1,6,5V20H6c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,2,18v2c.56,0,.8.22,1.29.71A3.56,3.56,0,0,0,6,22,3.56,3.56,0,0,0,8.7,20.71c.49-.49.73-.71,1.29-.71s.8.22,1.29.71a3.48,3.48,0,0,0,5.42,0c.49-.49.73-.71,1.3-.71s.8.22,1.29.71A3.57,3.57,0,0,0,22,22V20c-.56,0-.8-.22-1.29-.71A3.57,3.57,0,0,0,18,18Zm-2-3H8V13h8Zm0-6v2H8V9ZM14,20c-.56,0-.8-.22-1.29-.71A3.56,3.56,0,0,0,10,18a3.2,3.2,0,0,0-2,.65V17h8v1.65a6.48,6.48,0,0,0-.71.64C14.79,19.78,14.55,20,14,20Z"
+                                />
+                              </g>
+                            </svg>
+                            <span class="icon-aminites">Pool</span>
+                          </div>
+                        </div>
+                        <div class="container mt-5 p-0">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <ul>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Minus optio ea et laboriosam
+                                  iusto quaerat!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Minus optio ea et laboriosam
+                                  iusto quaerat!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Minus optio ea et laboriosam
+                                  iusto quaerat!
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-6">
+                              <ul>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Hic consequatur a alias
+                                  dolore adipisci quo!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Hic consequatur a alias
+                                  dolore adipisci quo!
+                                </li>
+                                <li>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Hic consequatur a alias
+                                  dolore adipisci quo!
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End -->
+                    <hr />
+                  </div>
+                </div>
+
+              
+              </div>
+              <!-- Hotel Information Container  end-->
+              <!-- -----------------------------------------  -->
+              <div class="container my-5">
+                <h3 class="title-h3 fw-bold">Room</h3>
+                <div class="row">
+                  <div class="tabs gap-3">
+                    <button
+                      class="price-box active"
+                      onclick="showTab('tab1', this)"
+                    >
+                      <p class="p-0 m-0">All Inclusive</p>
+                      <p class="p-0 m-0">From $199</p>
+                    </button>
+                    <button class="price-box" onclick="showTab('tab2', this)">
+                      <p class="p-0 m-0">Bead & Breakfast</p>
+                      <p class="p-0 m-0">From $199</p>
+                    </button>
+                    <button class="price-box" onclick="showTab('tab3', this)">
+                      <p class="p-0 m-0">Full Bord</p>
+                      <p class="p-0 m-0">From $199</p>
+                    </button>
+                    <button class="price-box" onclick="showTab('tab4', this)">
+                      <p class="p-0 m-0">Half Bord</p>
+                      <p class="p-0 m-0">From $199</p>
+                    </button>
+                    <button class="price-box" onclick="showTab('tab5', this)">
+                      <p class="p-0 m-0">Room Only</p>
+                      <p class="p-0 m-0">From $199</p>
+                    </button>
+                    <button class="price-box" onclick="showTab('tab6', this)">
+                      <p class="p-0 m-0">Self Catering</p>
+                      <p class="p-0 m-0">From $199</p>
+                    </button>
+                  </div>
+                </div>
+                <div id="tabContentContainer" class="mt-5">
+                  <!-- Initial content for Tab 1 -->
+                  <div id="tab1" class="tab-content">
+                    <div class="row flex-row gap-3">
+                      <div class="col-lg-6 col-md-6 card-price">
+                        <div class="d-flex w-100 justify-content-evenly">
+                          <input
+                            type="radio"
+                            name="roomType"
+                            id="radioTab1"
+                            onclick="showTab('tab1')"
+                            checked
+                          />
+                          <label
+                            for="radioTab1"
+                            class="d-flex gap-3 justify-content-center align-items-center"
+                          >
+                            <h3 class="m-0 fs-5 card-p-title">Family Room Standard</h3>
+                            <p class="pl-5 m-0 card-p-price">From $199</p>
+                          </label>
+                        </div>
+                        <div class="container mt-3">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <ul>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-6">
+                              <ul>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <a href="#" class="btn-cust">Read More</a>
+                        </div>
+                        <!-- Cancel -->
+                        <div class="container cancel-cont">
+                          <p class="p-0 m-0 c-con-p">Room With Free Cancellation</p>
+                          <p class="p-0 m-0 c-con-p">
+                            Free Cancellation before 04-Apr-2024 17:59
+                          </p>
+                          <a href="#" class="btn-cust">Read More</a>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 card-price">
+                        <div class="d-flex w-100 justify-content-evenly">
+                          <input
+                            type="radio"
+                            name="roomType"
+                            id="radioTab1"
+                            onclick="showTab('tab1')"
+                            checked
+                          />
+                          <label
+                            for="radioTab1"
+                            class="d-flex gap-3 justify-content-center align-items-center"
+                          >
+                            <h3 class="m-0 fs-5 card-p-title">Family Room Standard</h3>
+                            <p class="pl-5 m-0 card-p-price">From $199</p>
+                          </label>
+                        </div>
+                        <div class="container mt-3">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <ul>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-6">
+                              <ul>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                                <li class="price-card-li">
+                                  Lorem, ipsum dolor.
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <a href="#" class="btn-cust">Read More</a>
+                        </div>
+                        <!-- Cancel -->
+                        <div class="container cancel-cont">
+                          <p class="p-0 m-0 c-con-p">Room With Free Cancellation</p>
+                          <p class="p-0 m-0 c-con-p">
+                            Free Cancellation before 04-Apr-2024 17:59
+                          </p>
+                          <a href="#" class="btn-cust">Read More</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- Initial content for Tab 2 (hidden by default) -->
+                  <div id="tab2" class="tab-content" style="display: none">
+                    <p>Content for Tab 2</p>
+                  </div>
+                  <!-- Initial content for Tab 3 (hidden by default) -->
+                  <div id="tab3" class="tab-content" style="display: none">
+                    <p>Content for Tab 3</p>
+                  </div>
+                  <div id="tab4" class="tab-content" style="display: none">
+                    <p>Content for Tab 4</p>
+                  </div>
+                  <div id="tab5" class="tab-content" style="display: none">
+                    <p>Content for Tab 5</p>
+                  </div>
+                  <div id="tab6" class="tab-content" style="display: none">
+                    <p>Content for Tab 6</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- NEXT PRV -->
+              <div class="container">
+                <div class="col d-flex flex-wrap justify-content-between">
+                  <div class="col-lg-6 d-flex align-items-center">
+                    <span style="margin-right: 20px">Previous</span>
+                    <button type="submit" class="prv-btn">
+                      <img
+                        src="./Assets/Images/leftarrow.svg"
+                        alt=""
+                        class="icon-arrow"
+                      />
+                    </button>
+                  </div>
+                  <div
+                    class="col-lg-6 d-flex align-items-center justify-content-end"
+                  >
+                    <button type="submit" class="next-btn">
+                      <img
+                        src="./Assets/Images/rightarrow.svg"
+                        alt=""
+                        class="icon-arrow"
+                      />
+                    </button>
+                    <span style="margin-left: 20px">Next</span>
+                  </div>
+                </div>
+              </div>
+              <!-- BREAK -->
+              <hr class="my-4" />
+            </div>
+          </div>
+
+          <div class="bside">
+            <div class="container p-0">
+              <div class="d-flex flex-wrap justify-content-between">
+                <a class="btn-action">Call Now</a>
+                <a class="btn-action">Email Enquiry</a>
+              </div>
+            </div>
+            <!-- Cart -->
+            <div class="container p-0 m-0">
+              <div class="card-bside">
+                <div class="d-flex gap-2 align-items-center">
+                  <p class="d-inline p-0 m-0">$199</p>
+                  <div class="vr"></div>
+                  <p class="d-inline p-0 m-0" style="font-size: 12px">
+                    This is Holiday ATOL Protected
+                  </p>
+                </div>
+                <hr />
+                <h3 class="Bside-h3">What Included</h3>
+                <ul>
+                  <li class="sideb-li">Return Flight to Jersey</li>
+                  <li class="sideb-li">3 Night Stay in 4* Hotel</li>
+                  <li class="sideb-li">Bed and Breakfast</li>
+                </ul>
+                <a href="#" class="btn-action">Check Your Date And Prices</a>
+              </div>
+            </div>
+            <div class="container p-0 mt-3">
+              <div class="card-bside">
+                <h3 class="Bside-h3">Flights</h3>
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <span
+                    ><img src="./Assets/Images/Plane.svg" width="20" alt="" />
+                    Outbound</span
+                  >
+                  <p class="p-0 my-0 sideb-p">-EYZ8790</p>
+                </div>
+                <p class="p-0 my-2 sideb-p">Fri 27 Aug 2021(4h 0m)</p>
+                <div class="d-flex justify-content-between">
+                  <p class="p-0 m-0 sideb-p">05:30 London Gatwick</p>
+                  <p class="p-0 m-0 sideb-p">11:30 Rhodes</p>
+                </div>
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <span
+                    ><img src="./Assets/Images/Plane.svg" width="20" alt="" />
+                    Outbound</span
+                  >
+                  <p class="p-0 my-0 sideb-p">-EYZ8790</p>
+                </div>
+                <p class="p-0 my-2 sideb-p">Fri 27 Aug 2021(4h 0m)</p>
+                <div class="d-flex justify-content-between">
+                  <p class="p-0 m-0 sideb-p">05:30 London Gatwick</p>
+                  <p class="p-0 m-0 sideb-p">11:30 Rhodes</p>
+                </div>
+              </div>
+            </div>
+            <a class="button-action-book">Book Now</a>
+          </div>
+        </div>
+      </section>
+      <!-- BOOK SECTION -->
+      <section class="book-area">
+        <div class="container d-flex gap-3 flex-column">
+          <h3 class="title-h3">Book With Confidence!</h3>
+          <p class="p-0 m-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            saepe.
+          </p>
+          <span>
+            <img src="./Assets/Images/logo.png" alt="" width="110" />
+            <img
+              src="./Assets/Images/Screenshot 2024-03-11 181717.png"
+              alt=""
+              width="110"
+            />
+          </span>
+          <div
+            class="d-flex flex-row align-items-center justify-content-between"
+          >
+            <h3 class="title-h3">Get All the Deals Right in your Inbox</h3>
+            <form action="">
+              <div class="input-container">
+                <div class="input-field-icon d-flex">
+                  <input
+                    placeholder="Your Email"
+                    class="input-field"
+                    type="Email"
+                    id="input-field2"
+                  />
+                  <span class="d-flex align-items-center mx-3">
+                    <button type="submit" class="next-btn">
+                      <img
+                        src="./Assets/Images/rightarrow.svg"
+                        alt=""
+                        class="icon-arrow"
+                      />
+                    </button>
+                    <span style="margin-left: 20px">Next</span>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Main Content End -->
+
+    <!-- Footer -->
+    <footer class="my-5">
+      <div class="container">
+        <div class="container d-flex pt-4">
+          <div class="col">
+            <h4 class="title-footer">Quick Links</h4>
+            <ul>
+              <li><a href="#"> Holiday</a></li>
+              <li><a href="#"> Hotels</a></li>
+              <li><a href="#"> Top Deals</a></li>
+              <li><a href="#">All Inclusive</a></li>
+              <li><a href="#">Destinations</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="title-footer">Holiday</h4>
+            <ul>
+              <li><a href="#"> Holiday</a></li>
+              <li><a href="#"> Hotels</a></li>
+              <li><a href="#"> Top Deals</a></li>
+              <li><a href="#">All Inclusive</a></li>
+              <li><a href="#">Destinations</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="title-footer">Hotel</h4>
+            <ul>
+              <li><a href="#"> Holiday</a></li>
+              <li><a href="#"> Hotels</a></li>
+              <li><a href="#"> Top Deals</a></li>
+              <li><a href="#">All Inclusive</a></li>
+              <li><a href="#">Destinations</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="title-footer">All Deals</h4>
+            <ul>
+              <li><a href="#"> Holiday</a></li>
+              <li><a href="#"> Hotels</a></li>
+              <li><a href="#"> Top Deals</a></li>
+              <li><a href="#">All Inclusive</a></li>
+              <li><a href="#">Destinations</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="title-footer">All Inclusive</h4>
+            <ul>
+              <li><a href="#"> Holiday</a></li>
+              <li><a href="#"> Hotels</a></li>
+              <li><a href="#"> Top Deals</a></li>
+              <li><a href="#">All Inclusive</a></li>
+              <li><a href="#">Destinations</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="title-footer">Destinations</h4>
+            <ul>
+              <li><a href="#"> Holiday</a></li>
+              <li><a href="#"> Hotels</a></li>
+              <li><a href="#"> Top Deals</a></li>
+              <li><a href="#">All Inclusive</a></li>
+              <li><a href="#">Destinations</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="container d-flex">
+          <div class="col">
+            <h4>contact Us</h4>
+            <p class="p-0 m-0 fw-normal">020 4505 9777</p>
+            <p class="p-0 m-0 fw-normal">Support@traveldeal.com</p>
+          </div>
+          <div class="col">
+            <h4>Address</h4>
+            <p class="p-0 m-0 fw-normal">020 4505 9777</p>
+            <p class="p-0 m-0 fw-normal">Support@traveldeal.com</p>
+          </div>
+          <div class="col">
+            <a href="#" class="text-decoration-none text-dark">Menu</a>
+            <div class="vr"></div>
+            <a href="#" class="text-decoration-none text-dark">Send</a>
+            <div class="vr"></div>
+            <a href="#" class="text-decoration-none text-dark">Feedback</a>
+            <div class="vr"></div>
+            <a href="#" class="text-decoration-none text-dark"
+              >Privercy & Terms</a
+            >
+          </div>
+        </div>
+        <hr />
+        <div class="container d-flex gap-2 justify-content-between">
+          <div class="d-flex gap-2 align-items-center">
+            <p class="m-0 p-0 fw-normal">&#169T ravelodeal Holiday.</p>
+            <a href="#" class="text-decoration-none text-dark fw-normal"
+              >All Rights Reserved</a
+            >
+          </div>
+          <div class="d-flex gap-2">
+            <img
+              src="./Assets/Images/facebook.svg"
+              alt=""
+              srcset=""
+              width="20"
+              height="20"
+            />
+            <img
+              src="./Assets/Images/twitter.svg"
+              alt=""
+              srcset=""
+              width="20"
+              height="20"
+            />
+            <img
+              src="./Assets/Images/instagram.svg"
+              alt=""
+              srcset=""
+              width="20"
+              height="20"
+            />
+            <img
+              src="./Assets/Images/youtube.svg"
+              alt=""
+              srcset=""
+              width="20"
+              height="20"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/JAVASCRIPT" src="./script.js"></script>
+  </body>
+</html>

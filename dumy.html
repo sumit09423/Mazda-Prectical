@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Card and UI List</title>
+    <!-- Add your CSS styles if needed -->
+    <style>
+      /* Add this CSS to your existing stylesheet */
+      .radio-card {
+        border: 1px solid #ccc;
+        padding: 15px;
+      }
+
+      .radio-card label {
+        display: block;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+
+      .ui-list {
+        border: 1px solid #ccc;
+        padding: 15px;
+      }
+
+      .ui-list ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .ui-list ul li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row">
+        <!-- Left side: Radio Card -->
+        <div class="col-lg-6">
+          <div class="radio-card">
+            <input
+              type="radio"
+              name="roomType"
+              id="radioTab1"
+              onclick="showTab('tab1')"
+              checked
+            />
+            <label for="radioTab1">
+              <h3 class="title-h3 fw-bold">Room Type 1</h3>
+              <p class="p-0 m-0">From $199</p>
+            </label>
+          </div>
+        </div>
+
+        <!-- Right side: UI List -->
+        <div class="col-lg-8">
+          <div class="ui-list">
+            <!-- Initial content for Tab 1 -->
+            <div id="tab1" class="tab-content">
+              <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+              </ul>
+            </div>
+
+            <!-- Initial content for Tab 2 (hidden by default) -->
+            <div id="tab2" class="tab-content" style="display: none">
+              <ul>
+                <li>Feature A</li>
+                <li>Feature B</li>
+                <li>Feature C</li>
+              </ul>
+            </div>
+
+            <!-- Initial content for Tab 3 (hidden by default) -->
+            <div id="tab3" class="tab-content" style="display: none">
+              <ul>
+                <li>Option X</li>
+                <li>Option Y</li>
+                <li>Option Z</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="your_script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+.top-header {
+  gap: 16px;
+}
+
+.top-header .top-header-img {
+  width: 130px;
+  height: 44px;
+}
+
+.hero-search {
+  background-color: #212121;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: auto;
+}
+/* Input container */
+.input-container {
+  position: relative;
+  margin: 20px;
+}
+
+/* Input field */
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+}
+
+.input-field {
+  color: #ffffff; /* Change 'blue' to your desired text color */
+}
+
+.input-field::placeholder {
+  color: #ffffff; /* Change '#999' to your desired placeholder color */
+}
+
+/* Input label */
+.input-label {
+  position: absolute;
+  bottom: 44px;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0.678);
+  /* pointer-events: none; */
+  /* transition: all 0.3s ease; */
+}
+
+/* Input highlight */
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 100%;
+}
+
+.input-row {
+  display: flex;
+}
+
+.input-container {
+  flex: 1;
+  margin-right: 10px; /* Adjust the spacing between input fields */
+}
+
+.input-field-icon {
+  position: relative;
+}
+
+.location-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px; /* Adjust this value as per your design */
+}
+
+.search-btn {
+  background-color: purple;
+  border: none;
+  border-radius: 100%;
+  padding: 10px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.right-arrow {
+  margin-left: 5px;
+}
+
+/* current-tab */
+
+.current-tab .container {
+  gap: 10px;
+}
+
+/* Main Content */
+
+.aside {
+  width: 900px;
+}
+
+.aside .rating {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 6px 11px;
+}
+
+.title-h3 {
+  font-family: "Playfair Display", serif;
+}
+
+/* Image Slider */
+
+.slider-wrapper {
+  margin-top: 10px;
+  margin: 0 auto;
+}
+.img-slider {
+  width: 100%;
+  display: block;
+  object-fit: fill;
+  background-size: cover;
+  height: 100%;
+}
+.img-display {
+  overflow: hidden;
+}
+.img-showcase {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.img-showcase img {
+  min-width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.img-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 5px;
+}
+.img-item {
+  width: 100px;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3) {
+  margin-right: 0;
+}
+.img-item:hover {
+  opacity: 0.8;
+}
+.product-content {
+  padding: 2rem 1rem;
+  border: none;
+}
+
+/* Content TAB */
+.tabs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-bottom: 2px solid transparent;
+  color: black;
+  text-decoration: none;
+}
+
+.tab.active {
+  border-bottom: 2px solid purple;
+  color: purple;
+}
+
+.content {
+  display: none;
+  margin-top: 20px;
+}
+
+.content.active {
+  display: block;
+}
+
+/* Aminites Icon */
+.icon-aminites {
+  padding-left: 25px;
+}
+
+li {
+  padding: 15px 0px;
+  color: #b1b1b1db;
+  font-weight: normal;
+}
+
+.price-box {
+  display: inline-block;
+  position: relative;
+  background: #ffffff;
+  padding: 4px 20px;
+  font-size: 11px;
+  text-decoration: none;
+  border-radius: 3px;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.price-box.active {
+  background-color: #f15a22;
+  border: none;
+  color: white;
+}
+
+.price-box.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #f15a22;
+  border-right: 10px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 10px solid transparent;
+}
+
+.card-price {
+  padding: 20px 20px;
+  border: 1px solid #ccc;
+  width: 49%;
+}
+
+.price-card-li {
+  font-size: 12px;
+  padding: 5px 5px;
+}
+
+.btn-cust {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  text-decoration: none;
+  color: purple;
+}
+
+.cancel-cont {
+  padding: 18px 25px;
+  margin-top: 10px;
+  background-color: #cccccc27;
+}
+
+.icon-arrow {
+  max-width: 22px;
+}
+
+.prv-btn {
+  background-color: #80008080;
+  border: none;
+  border-radius: 100%;
+  padding: 10px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.next-btn {
+  background-color: purple;
+  border: none;
+  border-radius: 100%;
+  padding: 10px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* BSIDE */
+.bside {
+  width: 350px;
+  display: flex;
+  /* justify-content:center ; */
+  /* flex-wrap: wrap;    */
+  flex-direction: column;
+}
+
+.btn-action {
+  background-color: purple;
+  text-decoration: none;
+  color: white;
+  padding: 6px 27px;
+  font-size: 14px;
+  border: 1px solid purple;
+}
+
+.btn-action:hover {
+  background-color: white;
+  color: purple;
+  border: 1px solid purple;
+}
+
+.card-bside {
+  padding: 20px 33px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sideb-li {
+  padding: 2px;
+}
+.sideb-li::marker {
+  color: purple;
+}
+
+.Bside-h3 {
+  color: purple;
+  font-weight: 600;
+}
+
+.sideb-p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.button-action-book {
+  box-sizing: border-box;
+  border: 0;
+  color: white;
+  padding: 1em 1.8em;
+  background: #f15a22;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.book-area {
+  background-color: #212121;
+  color: white;
+  padding: 58px 127px;
+}
+
+/* Footer */
+footer .col > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .col > ul > li {
+  padding: 5px 5px;
+  margin: 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+footer .col > ul > li > a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.title-footer {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Small screens (phones) */
+@media screen and (max-width: 576px) {
+}
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* Adjust styles for medium screens */
+  .aside {
+    width: 100%;
+  }
+  .bside {
+    width: 100%;
+    display: flex;
+    /* justify-content:center; */
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .vr.border-1.opacity-20.mx-2 {
+    display: none;
+  }
+  li.nav-item.mx-2.d-flex.align-items-center {
+    margin: 0% !important;
+  }
+  .nav-item {
+    padding: 5px 10px;
+  }
+  .btn-action {
+    width: 100%;
+  }
+  .hotel-details {
+    width: 70%;
+  }
+  .icon-aminites {
+    font-size: 9px;
+    padding: 0;
+  }
+  .price-box {
+    font-size: 10px;
+  }
+  .card-price {
+    width: 100%;
+  }
+  .book-area > div > h3 {
+    font-size: 20px;
+  }
+  .book-area > div > p {
+    font-size: 13px;
+  }
+  .book-area > div > span > img {
+    width: 20%;
+  }
+  .d-flex.flex-row.align-items-center.justify-content-between > h3 {
+    font-size: 13px;
+  }
+  .title-footer {
+    font-size: 13px;
+  }
+  footer .col > ul > li > a {
+    font-size: 11px;
+  }
+  .container.d-flex > div > h4 {
+    font-size: 13px !important;
+  }
+  .container.d-flex > div > p {
+    font-size: 13px !important;
+  }
+  .container.d-flex > div > a {
+    font-size: 13px !important;
+    padding: 5px 5px;
+  }
+  .Bside-h3 {
+    font-size: 15px;
+  }
+  .card-bside {
+    padding: 10px;
+  }
+  .sideb-li {
+    font-size: 13px;
+  }
+  .btn-action {
+    font-size: 13px;
+    padding: 6px 7px;
+  }
+  .input-field {
+    font-size: 9px;
+  }
+  .input-label {
+    font-size: 13px;
+  }
+  .search-btn > img {
+    width: 20px;
+  }
+  .navbar-brand > img {
+    width: 50%;
+  }
+  .top-header .top-header-img {
+    width: 10%;
+    height: auto;
+  }
+  .img-top-nav {
+    width: 20px;
+  }
+  .top-nav-num {
+    font-size: 12px !important;
+  }
+  li {
+    font-size: 13px !important;
+  }
+}
+
+/* Large screens (laptops) */
+@media screen and (min-width: 993px) and (max-width: 1440px) {
+  /* Adjust styles for laptops with a width up to 1440px */
+  .aside {
+    width: 100%;
+  }
+  .bside {
+    width: 100%;
+    display: flex;
+    /* justify-content:center; */
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .btn-action {
+    padding: 6px 6px;
+    font-size: 13px;
+  }
+  .Bside-h3 {
+    font-size: 15px;
+  }
+  .sideb-li {
+    font-size: 13px;
+  }
+  .card-bside {
+    /* width: 250px; */
+  }
+  .icon-aminites {
+    font-size: 15px;
+    padding-left: 7px;
+  }
+  li {
+    font-size: 13px;
+  }
+  h3.m-0.fs-5 {
+    font-size: 10px;
+  }
+  .card-p-title {
+    font-size: 13px !important;
+  }
+  .card-p-price {
+    font-size: 13px !important;
+  }
+  .c-con-p {
+    font-size: 10px;
+  }
+  .card-price {
+    padding: 8px 5px;
+    border: 1px solid #ccc;
+    width: 48%;
+  }
+  .title-footer {
+    font-size: 13px;
+  }
+  footer .col > ul > li > a {
+    font-size: 11px;
+  }
+  .container.d-flex > div > h4 {
+    font-size: 13px !important;
+  }
+  .container.d-flex > div > p {
+    font-size: 13px !important;
+  }
+  .container.d-flex > div > a {
+    font-size: 13px !important;
+    padding: 5px 5px;
+  }
+}
+
+/* Extra-large screens (larger desktops) */
+@media screen and (min-width: 1041px) {
+}
